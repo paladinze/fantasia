@@ -1,15 +1,35 @@
 # Fantasia
 
-A component library based on Stencil.js and Web components
+ (🏗 Work in progress)
+
+A personal component library based on Stencil.js and Web components
+
+## Project structure
+```
+├── fantasia-stencil # web components 
+└── fantasia-react # react wrapper for integration
+```
 
 ## Quick start
+
+### usage: vallina JS application
+```html
+<ft-modal></ft-modal>
+```
+
+### usage: React application
+```jsx
+import { FtModal } from '@paladinze/fantasia-react';
+```
+
+
+## Development
 try out stencil components in standalone environment
 
 ```shell
+cd fantasia-stencil
 npm run start
 ```
-
-## Development
 
 ### build stencil library
 
@@ -24,7 +44,7 @@ cd fantasia-react
 npm link fantasia
 ```
 
-### usage
+### use the components when developing
 
 ```shell
 cd fantasia-react
@@ -32,9 +52,4 @@ npm link
 
 cd my-project
 npm link fantasia-react
-```
-
-in application
-```jsx
-import { FtModal } from 'fantasia-react';
 ```
