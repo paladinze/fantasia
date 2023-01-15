@@ -4,6 +4,9 @@
 
 A personal component library based on Stencil.js and Web components
 
+## Components
+- [x] modal
+
 ## Project structure
 ```
 ├── fantasia-stencil # web components 
@@ -12,7 +15,7 @@ A personal component library based on Stencil.js and Web components
 
 ## Quick start
 
-### usage: vallina JS application
+### usage: vanilla JS application
 ```html
 <ft-modal></ft-modal>
 ```
