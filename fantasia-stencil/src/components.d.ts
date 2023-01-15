@@ -23,6 +23,10 @@ export namespace Components {
         "middle": string;
     }
 }
+export interface FtModalCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLFtModalElement;
+}
 declare global {
     interface HTMLFtModalElement extends Components.FtModal, HTMLStencilElement {
     }
@@ -43,6 +47,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface FtModal {
+        "onConfirm"?: (event: FtModalCustomEvent<null>) => void;
     }
     interface MyComponent {
         /**

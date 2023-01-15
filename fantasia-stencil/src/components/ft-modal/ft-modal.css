@@ -5,3 +5,9 @@
 :host {
   display: block;
 }
+
+.laptop-icon {
+  color: white;
+  width: 32px;
+  height: 32px;
+}
